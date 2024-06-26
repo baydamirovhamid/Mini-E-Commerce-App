@@ -36,3 +36,14 @@ C:\Users\99470\Desktop\Mini E-Commerce App\ECommerceAPI\Presentation\ECommerceAP
 C:\Users\99470\Desktop\Mini E-Commerce App\ECommerceAPI\Presentation\ECommerceAPI.API\obj\Debug\net6.0\ECommerceAPI.API.pdb
 C:\Users\99470\Desktop\Mini E-Commerce App\ECommerceAPI\Presentation\ECommerceAPI.API\obj\Debug\net6.0\ECommerceAPI.API.genruntimeconfig.cache
 C:\Users\99470\Desktop\Mini E-Commerce App\ECommerceAPI\Presentation\ECommerceAPI.API\obj\Debug\net6.0\ref\ECommerceAPI.API.dll
+C:\Users\99470\Desktop\Mini E-Commerce App\ECommerceAPI\Presentation\ECommerceAPI.API\bin\Debug\net6.0\Humanizer.dll
+C:\Users\99470\Desktop\Mini E-Commerce App\ECommerceAPI\Presentation\ECommerceAPI.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\99470\Desktop\Mini E-Commerce App\ECommerceAPI\Presentation\ECommerceAPI.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\99470\Desktop\Mini E-Commerce App\ECommerceAPI\Presentation\ECommerceAPI.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\99470\Desktop\Mini E-Commerce App\ECommerceAPI\Presentation\ECommerceAPI.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\99470\Desktop\Mini E-Commerce App\ECommerceAPI\Presentation\ECommerceAPI.API\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\99470\Desktop\Mini E-Commerce App\ECommerceAPI\Presentation\ECommerceAPI.API\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\99470\Desktop\Mini E-Commerce App\ECommerceAPI\Presentation\ECommerceAPI.API\bin\Debug\net6.0\Npgsql.dll
+C:\Users\99470\Desktop\Mini E-Commerce App\ECommerceAPI\Presentation\ECommerceAPI.API\bin\Debug\net6.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\99470\Desktop\Mini E-Commerce App\ECommerceAPI\Presentation\ECommerceAPI.API\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\99470\Desktop\Mini E-Commerce App\ECommerceAPI\Presentation\ECommerceAPI.API\obj\Debug\net6.0\ECommerceAPI.API.sourcelink.json

@@ -9,3 +9,4 @@ C:\Users\99470\Desktop\Mini E-Commerce App\ECommerceAPI\Core\ECommerceAPI.Domain
 C:\Users\99470\Desktop\Mini E-Commerce App\ECommerceAPI\Core\ECommerceAPI.Domain\obj\Debug\net6.0\refint\ECommerceAPI.Domain.dll
 C:\Users\99470\Desktop\Mini E-Commerce App\ECommerceAPI\Core\ECommerceAPI.Domain\obj\Debug\net6.0\ECommerceAPI.Domain.pdb
 C:\Users\99470\Desktop\Mini E-Commerce App\ECommerceAPI\Core\ECommerceAPI.Domain\obj\Debug\net6.0\ref\ECommerceAPI.Domain.dll
+C:\Users\99470\Desktop\Mini E-Commerce App\ECommerceAPI\Core\ECommerceAPI.Domain\obj\Debug\net6.0\ECommerceAPI.Domain.sourcelink.json

@@ -15,3 +15,6 @@ C:\Users\99470\Desktop\Mini E-Commerce App\ECommerceAPI\Infrastructure\ECommerce
 C:\Users\99470\Desktop\Mini E-Commerce App\ECommerceAPI\Infrastructure\ECommerceAPI.Persistance\obj\Debug\net6.0\refint\ECommerceAPI.Persistance.dll
 C:\Users\99470\Desktop\Mini E-Commerce App\ECommerceAPI\Infrastructure\ECommerceAPI.Persistance\obj\Debug\net6.0\ECommerceAPI.Persistance.pdb
 C:\Users\99470\Desktop\Mini E-Commerce App\ECommerceAPI\Infrastructure\ECommerceAPI.Persistance\obj\Debug\net6.0\ref\ECommerceAPI.Persistance.dll
+C:\Users\99470\Desktop\Mini E-Commerce App\ECommerceAPI\Infrastructure\ECommerceAPI.Persistance\bin\Debug\net6.0\ECommerceAPI.Persistance.runtimeconfig.json
+C:\Users\99470\Desktop\Mini E-Commerce App\ECommerceAPI\Infrastructure\ECommerceAPI.Persistance\obj\Debug\net6.0\ECommerceAPI.Persistance.sourcelink.json
+C:\Users\99470\Desktop\Mini E-Commerce App\ECommerceAPI\Infrastructure\ECommerceAPI.Persistance\obj\Debug\net6.0\ECommerceAPI.Persistance.genruntimeconfig.cache

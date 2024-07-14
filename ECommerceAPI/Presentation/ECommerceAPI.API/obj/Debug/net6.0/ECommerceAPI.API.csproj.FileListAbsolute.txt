@@ -11,9 +11,7 @@ C:\Users\99470\Desktop\Mini E-Commerce App\ECommerceAPI\Presentation\ECommerceAP
 C:\Users\99470\Desktop\Mini E-Commerce App\ECommerceAPI\Presentation\ECommerceAPI.API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\99470\Desktop\Mini E-Commerce App\ECommerceAPI\Presentation\ECommerceAPI.API\bin\Debug\net6.0\ECommerceAPI.Application.dll
 C:\Users\99470\Desktop\Mini E-Commerce App\ECommerceAPI\Presentation\ECommerceAPI.API\bin\Debug\net6.0\ECommerceAPI.Domain.dll
-C:\Users\99470\Desktop\Mini E-Commerce App\ECommerceAPI\Presentation\ECommerceAPI.API\bin\Debug\net6.0\ECommerceAPI.Persistance.dll
 C:\Users\99470\Desktop\Mini E-Commerce App\ECommerceAPI\Presentation\ECommerceAPI.API\bin\Debug\net6.0\ECommerceAPI.Application.pdb
-C:\Users\99470\Desktop\Mini E-Commerce App\ECommerceAPI\Presentation\ECommerceAPI.API\bin\Debug\net6.0\ECommerceAPI.Persistance.pdb
 C:\Users\99470\Desktop\Mini E-Commerce App\ECommerceAPI\Presentation\ECommerceAPI.API\bin\Debug\net6.0\ECommerceAPI.Domain.pdb
 C:\Users\99470\Desktop\Mini E-Commerce App\ECommerceAPI\Presentation\ECommerceAPI.API\obj\Debug\net6.0\ECommerceAPI.API.csproj.AssemblyReference.cache
 C:\Users\99470\Desktop\Mini E-Commerce App\ECommerceAPI\Presentation\ECommerceAPI.API\obj\Debug\net6.0\ECommerceAPI.API.GeneratedMSBuildEditorConfig.editorconfig
@@ -47,3 +45,6 @@ C:\Users\99470\Desktop\Mini E-Commerce App\ECommerceAPI\Presentation\ECommerceAP
 C:\Users\99470\Desktop\Mini E-Commerce App\ECommerceAPI\Presentation\ECommerceAPI.API\bin\Debug\net6.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
 C:\Users\99470\Desktop\Mini E-Commerce App\ECommerceAPI\Presentation\ECommerceAPI.API\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
 C:\Users\99470\Desktop\Mini E-Commerce App\ECommerceAPI\Presentation\ECommerceAPI.API\obj\Debug\net6.0\ECommerceAPI.API.sourcelink.json
+C:\Users\99470\Desktop\Mini E-Commerce App\ECommerceAPI\Presentation\ECommerceAPI.API\bin\Debug\net6.0\Microsoft.Extensions.Configuration.dll
+C:\Users\99470\Desktop\Mini E-Commerce App\ECommerceAPI\Presentation\ECommerceAPI.API\bin\Debug\net6.0\ECommerceAPI.Persistence.dll
+C:\Users\99470\Desktop\Mini E-Commerce App\ECommerceAPI\Presentation\ECommerceAPI.API\bin\Debug\net6.0\ECommerceAPI.Persistence.pdb

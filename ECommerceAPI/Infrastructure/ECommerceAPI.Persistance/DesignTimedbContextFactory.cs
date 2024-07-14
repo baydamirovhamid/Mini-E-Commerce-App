@@ -1,9 +1,9 @@
-﻿using ECommerceAPI.Persistance.Contexts;
+﻿using ECommerceAPI.Persistence;
+using ECommerceAPI.Persistence.Contexts;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
-using Microsoft.Extensions.Configuration;
 
-namespace ECommerceAPI.Persistance
+namespace ECommerceAPI.Persistence
 {
     public class DesignTimedbContextFactory: IDesignTimeDbContextFactory<ECommerceAPIDbContext>
 

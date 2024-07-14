@@ -617,7 +617,7 @@
           "bin/placeholder/ECommerceAPI.Domain.dll": {}
         }
       },
-      "ECommerceAPI.Persistance/1.0.0": {
+      "ECommerceAPI.Persistence/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
@@ -629,10 +629,10 @@
           "Npgsql.EntityFrameworkCore.PostgreSQL": "6.0.29"
         },
         "compile": {
-          "bin/placeholder/ECommerceAPI.Persistance.dll": {}
+          "bin/placeholder/ECommerceAPI.Persistence.dll": {}
         },
         "runtime": {
-          "bin/placeholder/ECommerceAPI.Persistance.dll": {}
+          "bin/placeholder/ECommerceAPI.Persistence.dll": {}
         }
       }
     }
@@ -1620,16 +1620,16 @@
       "path": "../../Core/ECommerceAPI.Domain/ECommerceAPI.Domain.csproj",
       "msbuildProject": "../../Core/ECommerceAPI.Domain/ECommerceAPI.Domain.csproj"
     },
-    "ECommerceAPI.Persistance/1.0.0": {
+    "ECommerceAPI.Persistence/1.0.0": {
       "type": "project",
-      "path": "../../Infrastructure/ECommerceAPI.Persistance/ECommerceAPI.Persistance.csproj",
-      "msbuildProject": "../../Infrastructure/ECommerceAPI.Persistance/ECommerceAPI.Persistance.csproj"
+      "path": "../../Infrastructure/ECommerceAPI.Persistance/ECommerceAPI.Persistence.csproj",
+      "msbuildProject": "../../Infrastructure/ECommerceAPI.Persistance/ECommerceAPI.Persistence.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "ECommerceAPI.Application >= 1.0.0",
-      "ECommerceAPI.Persistance >= 1.0.0",
+      "ECommerceAPI.Persistence >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.31",
       "Swashbuckle.AspNetCore >= 6.5.0"
     ]
@@ -1665,8 +1665,8 @@
             "C:\\Users\\99470\\Desktop\\Mini E-Commerce App\\ECommerceAPI\\Core\\ECommerceAPI.Application\\ECommerceAPI.Application.csproj": {
               "projectPath": "C:\\Users\\99470\\Desktop\\Mini E-Commerce App\\ECommerceAPI\\Core\\ECommerceAPI.Application\\ECommerceAPI.Application.csproj"
             },
-            "C:\\Users\\99470\\Desktop\\Mini E-Commerce App\\ECommerceAPI\\Infrastructure\\ECommerceAPI.Persistance\\ECommerceAPI.Persistance.csproj": {
-              "projectPath": "C:\\Users\\99470\\Desktop\\Mini E-Commerce App\\ECommerceAPI\\Infrastructure\\ECommerceAPI.Persistance\\ECommerceAPI.Persistance.csproj"
+            "C:\\Users\\99470\\Desktop\\Mini E-Commerce App\\ECommerceAPI\\Infrastructure\\ECommerceAPI.Persistance\\ECommerceAPI.Persistence.csproj": {
+              "projectPath": "C:\\Users\\99470\\Desktop\\Mini E-Commerce App\\ECommerceAPI\\Infrastructure\\ECommerceAPI.Persistance\\ECommerceAPI.Persistence.csproj"
             }
           }
         }

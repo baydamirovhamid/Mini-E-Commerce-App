@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Design;
 
 namespace ECommerceAPI.Persistence
 {
-    public class DesignTimedbContextFactory: IDesignTimeDbContextFactory<ECommerceAPIDbContext>
+    public class DesignTimeDbContextFactory: IDesignTimeDbContextFactory<ECommerceAPIDbContext>
 
     {
         public ECommerceAPIDbContext CreateDbContext(string[] args)

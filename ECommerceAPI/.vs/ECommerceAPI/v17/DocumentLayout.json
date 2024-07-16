@@ -46,8 +46,7 @@
               "RelativeToolTip": "Core\\ECommerceAPI.Domain\\Entities\\Order.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-14T20:36:42.092Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-14T20:36:42.092Z"
             },
             {
               "$type": "Document",
@@ -59,8 +58,7 @@
               "RelativeToolTip": "Infrastructure\\ECommerceAPI.Persistance\\Contexts\\ECommerceAPIDbContext.cs",
               "ViewState": "AQIAAAgAAAAAAAAAAAAQwCAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-14T20:09:36.034Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-14T20:09:36.034Z"
             },
             {
               "$type": "Document",
@@ -72,8 +70,7 @@
               "RelativeToolTip": "Core\\ECommerceAPI.Domain\\Entities\\Common\\BaseEntity.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-14T20:09:19.26Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-14T20:09:19.26Z"
             },
             {
               "$type": "Document",
@@ -85,8 +82,7 @@
               "RelativeToolTip": "Infrastructure\\ECommerceAPI.Persistance\\Repositories\\ReadRepository.cs",
               "ViewState": "AQIAABEAAAAAAAAAAAAQwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-14T20:09:15.861Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-14T20:09:15.861Z"
             },
             {
               "$type": "Document",

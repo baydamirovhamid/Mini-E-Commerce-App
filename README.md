@@ -21,3 +21,15 @@ The layer between the domain and business layers is an abstraction layer. All se
 
 **Presentation Layer** - It is the layer where the user interacts with the application.  Web API, MVC.
 
+
+
+# What is the CORS Policy?
+**CORS** (Cross-Origin Resource Sharing) policy is a way for browsers to allow some web pages to talk to other web pages. Browsers have a security rule called the *Same-Origin* Policy that stops bad websites from reading data from other websites.
+
+If a client application runs in a browser (like Opera, Chrome, or Mozilla), the CORS policy is important. The browser will first check with the target site to see if it allows requests from different origins. If the target site says yes, the browser will let the request go through; if not, it will block it.
+
+For example:
+https://www.something.com
+
+If the protocol, host, or port is different, the browser will block the request.
+

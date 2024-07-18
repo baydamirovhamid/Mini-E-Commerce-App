@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { AlertifyService, MessageType, Position } from '../../../services/admin/alertify.service';
+import { extend } from 'jquery';
+import { BaseComponent, SpinnerType } from '../../../base/base.component';
+import { NgxSpinnerService } from 'ngx-spinner';
 
 @Component({
   selector: 'app-dashboard',
@@ -7,12 +10,14 @@ import { AlertifyService, MessageType, Position } from '../../../services/admin/
   styleUrl: './dashboard.component.scss',
 
 })
-export class DashboardComponent implements OnInit {
+export class DashboardComponent extends BaseComponent implements OnInit {
   
-  constructor(private alertify: AlertifyService){
+  constructor(private alertify: AlertifyService, spinner: NgxSpinnerService){
+  super(spinner);
   }
 
   ngOnInit(): void {
+    this.showSpinner(SpinnerType.BallAtom)
 
   }
 

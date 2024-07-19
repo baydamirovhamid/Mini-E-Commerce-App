@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component} from '@angular/core';
 import * as $ from 'jquery';
 import { ToastrService } from 'ngx-toastr';
 import { CustomToastrService, ToastrMessageType, ToastrPosition } from './services/ui/custom-toastr.service';
@@ -8,16 +8,11 @@ import { CustomToastrService, ToastrMessageType, ToastrPosition } from './servic
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit {
+export class AppComponent  {
   title = 'ECommerceClient';
 
   constructor() { }
-
-  ngOnInit(): void {
-    $.get("https://localhost:44374/api/Product", data => {
-      console.log(data);
-    });
   }
-}
+
 
 

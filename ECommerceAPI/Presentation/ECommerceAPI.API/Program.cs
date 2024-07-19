@@ -4,9 +4,11 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddPersistenceServices();
 
-builder.Services.AddCors(options => 
-options.AddDefaultPolicy(policy => 
-policy.WithOrigins("http://localhost:4200/", "https://localhost:4200/").AllowAnyHeader().AllowAnyMethod()
+builder.Services.AddCors(options => options.AddPolicy("myclients", policy =>
+    policy.WithOrigins("http://localhost:4200", "https://localhost:4200")
+    .AllowAnyHeader()
+    .AllowAnyMethod()
+    .AllowCredentials()
 ));
 
 builder.Services.AddControllers();
@@ -23,7 +25,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseCors();
+app.UseCors("myclients");
 app.UseHttpsRedirection();
 
 app.UseAuthorization();

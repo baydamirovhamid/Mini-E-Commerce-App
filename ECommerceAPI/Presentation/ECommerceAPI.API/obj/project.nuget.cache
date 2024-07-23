@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "p1CHLDQ0LhlxRA+Wp7xO2ZA1uJza/sii6Zqr9Akayvx+9c08iaV/gFmbmJanFBhAxY//RAI0pah/gIxstyUckw==",
+  "dgSpecHash": "96cC/C9A/0LsEtGoeWFgxrQs9sbpkjwk+WZrcy9pfSs/u7JhbVSMI7fddU5ELhr60ITDfxk/zZuoQa2DbgAhXg==",
   "success": true,
   "projectFilePath": "C:\\Users\\99470\\Desktop\\Mini E-Commerce App\\ECommerceAPI\\Presentation\\ECommerceAPI.API\\ECommerceAPI.API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\99470\\.nuget\\packages\\fluentvalidation\\10.4.0\\fluentvalidation.10.4.0.nupkg.sha512",
+    "C:\\Users\\99470\\.nuget\\packages\\fluentvalidation.aspnetcore\\10.4.0\\fluentvalidation.aspnetcore.10.4.0.nupkg.sha512",
+    "C:\\Users\\99470\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\10.4.0\\fluentvalidation.dependencyinjectionextensions.10.4.0.nupkg.sha512",
     "C:\\Users\\99470\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\99470\\.nuget\\packages\\microsoft.aspnetcore.cors\\2.1.1\\microsoft.aspnetcore.cors.2.1.1.nupkg.sha512",
     "C:\\Users\\99470\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.1.1\\microsoft.aspnetcore.http.abstractions.2.1.1.nupkg.sha512",

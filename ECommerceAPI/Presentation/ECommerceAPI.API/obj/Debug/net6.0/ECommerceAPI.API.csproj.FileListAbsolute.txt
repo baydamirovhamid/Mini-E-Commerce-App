@@ -48,3 +48,8 @@ C:\Users\99470\Desktop\Mini E-Commerce App\ECommerceAPI\Presentation\ECommerceAP
 C:\Users\99470\Desktop\Mini E-Commerce App\ECommerceAPI\Presentation\ECommerceAPI.API\bin\Debug\net6.0\Microsoft.Extensions.Configuration.dll
 C:\Users\99470\Desktop\Mini E-Commerce App\ECommerceAPI\Presentation\ECommerceAPI.API\bin\Debug\net6.0\ECommerceAPI.Persistence.dll
 C:\Users\99470\Desktop\Mini E-Commerce App\ECommerceAPI\Presentation\ECommerceAPI.API\bin\Debug\net6.0\ECommerceAPI.Persistence.pdb
+C:\Users\99470\Desktop\Mini E-Commerce App\ECommerceAPI\Presentation\ECommerceAPI.API\bin\Debug\net6.0\FluentValidation.dll
+C:\Users\99470\Desktop\Mini E-Commerce App\ECommerceAPI\Presentation\ECommerceAPI.API\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
+C:\Users\99470\Desktop\Mini E-Commerce App\ECommerceAPI\Presentation\ECommerceAPI.API\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\99470\Desktop\Mini E-Commerce App\ECommerceAPI\Presentation\ECommerceAPI.API\bin\Debug\net6.0\ECommerceAPI.Infrastructure.dll
+C:\Users\99470\Desktop\Mini E-Commerce App\ECommerceAPI\Presentation\ECommerceAPI.API\bin\Debug\net6.0\ECommerceAPI.Infrastructure.pdb

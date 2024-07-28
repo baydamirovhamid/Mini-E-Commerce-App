@@ -12,8 +12,9 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { MatTableModule } from '@angular/material/table';
 import { DeleteDirective } from '../../../directives/admin/delete.directive';
-
-
+import { MatDialogModule } from '@angular/material/dialog';
+import { DeleteDialogComponent } from '../../../dialogs/delete-dialog/delete-dialog.component';
+import 'alertifyjs/build/css/alertify.css';
 
 
 @NgModule({
@@ -21,14 +22,15 @@ import { DeleteDirective } from '../../../directives/admin/delete.directive';
     ProductsComponent,
     CreateComponent,
     ListComponent,
-    DeleteDirective
+    DeleteDirective,
+    DeleteDialogComponent,
   ],
   imports: [
     CommonModule,
     RouterModule.forChild([
       {path:"", component:ProductsComponent}
     ]),
-    MatSidenavModule, MatFormFieldModule, MatInputModule, MatButtonModule, MatPaginatorModule, MatSortModule, MatTableModule
+    MatSidenavModule, MatFormFieldModule, MatInputModule, MatButtonModule, MatPaginatorModule, MatSortModule, MatTableModule,MatDialogModule
   ]
 })
 export class ProductsModule { }

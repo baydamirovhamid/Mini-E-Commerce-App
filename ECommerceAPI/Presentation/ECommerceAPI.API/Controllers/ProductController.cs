@@ -13,18 +13,23 @@ namespace ECommerceAPI.API.Controllers
     {
         readonly private IProductWriteRepository _productWriteRepository;
         readonly private IProductReadRepository _productReadRepository;
+        private readonly IWebHostEnvironment _webHostEnvironment;
 
-        public ProductController(IProductWriteRepository productWriteRepository, IProductReadRepository productReadRepository)
-        {        
+        public IWebHostEnvironment WebHostEnvironment { get; }
+
+        public ProductController(IProductWriteRepository productWriteRepository, IProductReadRepository productReadRepository,
+            IWebHostEnvironment webHostEnvironment)
+        {
             _productWriteRepository = productWriteRepository;
-            _productReadRepository = productReadRepository;          
+            _productReadRepository = productReadRepository;
+            _webHostEnvironment = webHostEnvironment;
         }
 
         [HttpGet]
-        public async Task<IActionResult> Get([FromQuery]Pagination pagination)
-        {      
-           var totalCount = _productReadRepository.GetAll(false).Count();
-           var products= _productReadRepository.GetAll(false).Select(p => new
+        public async Task<IActionResult> Get([FromQuery] Pagination pagination)
+        {
+            var totalCount = _productReadRepository.GetAll(false).Count();
+            var products = _productReadRepository.GetAll(false).Select(p => new
             {
                 p.Id,
                 p.Name,
@@ -36,7 +41,7 @@ namespace ECommerceAPI.API.Controllers
 
             return Ok(new
             {
-                totalCount, 
+                totalCount,
                 products
             });
         }
@@ -44,13 +49,13 @@ namespace ECommerceAPI.API.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> Get(string id)
         {
-            return Ok( await _productReadRepository.GetByIdAsync(id, false));  
+            return Ok(await _productReadRepository.GetByIdAsync(id, false));
         }
 
         [HttpPost]
         public async Task<IActionResult> Post(VM_Create_Product model)
         {
-           await _productWriteRepository.AddAsync(new()
+            await _productWriteRepository.AddAsync(new()
             {
                 Name = model.Name,
                 Price = model.Price,
@@ -80,6 +85,29 @@ namespace ECommerceAPI.API.Controllers
 
             return Ok();
 
+        }
+
+        [HttpPost("[action]")]
+        public async Task<IActionResult> Upload()
+        {
+            string uploadPath = Path.Combine(_webHostEnvironment.WebRootPath,"resource/product-images");
+
+            if(!Directory.Exists(uploadPath))
+                Directory.CreateDirectory(uploadPath);
+
+            Random r = new();
+
+            foreach (IFormFile file in Request.Form.Files)
+            {
+                string fullPath = Path.Combine(uploadPath, $"{r.Next()}{Path.GetExtension(file.FileName)}");
+
+                using FileStream fileStream = new(fullPath, FileMode.Create, FileAccess.Write, FileShare.None, 1024 * 1024, useAsync: false);
+
+                await file.CopyToAsync(fileStream);
+                await fileStream.FlushAsync();
+
+            }
+            return Ok();
         }
 
     }

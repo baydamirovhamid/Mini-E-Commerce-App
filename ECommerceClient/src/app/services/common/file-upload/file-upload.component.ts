@@ -5,6 +5,9 @@ import { HttpErrorResponse, HttpHeaders } from '@angular/common/http';
 import { error } from 'jquery';
 import { AlertifyService, MessageType, Position } from '../../admin/alertify.service';
 import { CustomToastrService, ToastrMessageType, ToastrPosition } from '../../ui/custom-toastr.service';
+import { MatDialog } from '@angular/material/dialog';
+import { FileUploadDialogComponent, FileUploadDialogState } from '../../../dialogs/file-upload-dialog/file-upload-dialog.component';
+import { DialogService } from '../dialog.service';
 
 @Component({
   selector: 'app-file-upload',
@@ -14,7 +17,9 @@ import { CustomToastrService, ToastrMessageType, ToastrPosition } from '../../ui
 export class FileUploadComponent {
   constructor(private httpClientService: HttpClientService,
     private alertifyService: AlertifyService,
-  private customToastrService: CustomToastrService) { }
+    private customToastrService: CustomToastrService,
+    private dialog: MatDialog,
+    private dialogService: DialogService) { }
 
   public files: NgxFileDropEntry[];
 
@@ -31,55 +36,58 @@ export class FileUploadComponent {
       });
     }
 
-    this.httpClientService.post({
-      controller: this.options.controller,
-      action: this.options.action,
-      queryString: this.options.queryString,
-      headers: new HttpHeaders({"reponseType": "blob"})
-    }, fileData).subscribe(data => {
+    this.dialogService.openDialog({
+      componentType: FileUploadDialogComponent,
+      data: FileUploadDialogState.Yes,
+      afterClosed: () => {
+      this.httpClientService.post({
+        controller: this.options.controller,
+        action: this.options.action,
+        queryString: this.options.queryString,
+        headers: new HttpHeaders({ "reponseType": "blob" })
+      }, fileData).subscribe(data => {
 
-      const message: string = "The files have been successfully uploaded";
+        const message: string = "The files have been successfully uploaded";
 
-      if (this.options.isAdminPage) {
-        this.alertifyService.message(message,
-          {
-            dismissOthers: true,
-            messageType: MessageType.Success,
-            position: Position.TopRight
+        if (this.options.isAdminPage) {
+          this.alertifyService.message(message,
+            {
+              dismissOthers: true,
+              messageType: MessageType.Success,
+              position: Position.TopRight
 
+            })
+        } else {
+          this, this.customToastrService.message(message, "Succesfully", {
+            messageType: ToastrMessageType.Success,
+            position: ToastrPosition.TopRight
           })
-      } else {
-        this, this.customToastrService.message(message, "Succesfully", {
-          messageType: ToastrMessageType.Success,
-          position: ToastrPosition.TopRight
-        })
+        }
+      },
+
+        (errorResponse: HttpErrorResponse) => {
+          const message: string = "Unexpected error occurred!";
+
+          if (this.options.isAdminPage) {
+            this.alertifyService.message(message,
+              {
+                dismissOthers: true,
+                messageType: MessageType.Error,
+                position: Position.TopRight
+
+              })
+          } else {
+            this, this.customToastrService.message(message, "Failed!", {
+              messageType: ToastrMessageType.Error,
+              position: ToastrPosition.TopRight
+            })
+          }
+        });
       }
-
-    },
-
-      (errorResponse: HttpErrorResponse) => {
-        const message: string = "Unexpected error occurred!";
-
-      if (this.options.isAdminPage) {
-        this.alertifyService.message(message,
-          {
-            dismissOthers: true,
-            messageType: MessageType.Error,
-            position: Position.TopRight
-
-          })
-      } else {
-        this, this.customToastrService.message(message, "Failed!", {
-          messageType: ToastrMessageType.Error,
-          position: ToastrPosition.TopRight
-        })
-      }
-
-    });
-
-
+    })
   }
 }
+
 
 
 export class FileUploadOptions {

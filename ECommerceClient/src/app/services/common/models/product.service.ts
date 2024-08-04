@@ -35,7 +35,7 @@ export class ProductService {
     try {
       const response = await firstValueFrom(
         this.httpClientService.get<{ totalCount: number; products: List_Product[] }>({
-          controller: "Product",
+          controller: "Products",
           queryString: `page=${page}&size=${size}`
         })
       );
@@ -51,7 +51,7 @@ export class ProductService {
 
   async delete(id: string) {
     const deleteObservable: Observable<any> = this.httpClientService.delete<any>({
-      controller: "Product"
+      controller: "Products"
     }, id);
 
     await firstValueFrom(deleteObservable);

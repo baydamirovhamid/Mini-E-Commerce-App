@@ -1,5 +1,4 @@
 ﻿using ECommerceAPI.Application.Repositories;
-using ECommerceAPI.Persistence;
 using ECommerceAPI.Persistence.Contexts;
 using ECommerceAPI.Persistence.Repositories;
 using Microsoft.EntityFrameworkCore;

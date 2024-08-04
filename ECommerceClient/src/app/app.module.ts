@@ -7,38 +7,34 @@ import { UiModule } from './ui/ui.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { ToastrModule } from 'ngx-toastr';
-import { NgxSpinnerModule } from "ngx-spinner";
-import { HttpClientModule } from '@angular/common/http';
+import { NgxSpinnerModule } from 'ngx-spinner';
+import { HttpClientModule, provideHttpClient, withFetch } from '@angular/common/http';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 
-
-
-
-
 @NgModule({
   declarations: [
     AppComponent,
-    
-    
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    AdminModule,UiModule,
+    AdminModule,
+    UiModule,
     ToastrModule.forRoot(),
     NgxSpinnerModule,
     MatTableModule,
     MatPaginatorModule,
     MatSortModule,
-    HttpClientModule
+    HttpClientModule // This is fine to keep
   ],
   providers: [
     provideClientHydration(),
     provideAnimationsAsync(),
-   {provide: "baseUrl", useValue: "https://localhost:44374/api", multi:true}
+    provideHttpClient(withFetch()), // Add this line to enable fetch API
+    { provide: 'baseUrl', useValue: 'https://localhost:44374/api', multi: true }
   ],
   bootstrap: [AppComponent]
 })

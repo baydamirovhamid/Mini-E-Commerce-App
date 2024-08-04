@@ -3,11 +3,11 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\directives",
-    "\\src\\app\\directives\\admin",
     "\\src\\app\\services",
-    "\\src\\app\\services\\common"
+    "\\src\\app\\services\\common",
+    "\\src\\app\\services\\common\\file-upload",
+    "\\src\\app\\services\\common\\models"
   ],
-  "SelectedNode": "\\src\\app\\directives\\admin\\delete.directive.ts",
+  "SelectedNode": "\\src\\app\\services\\common\\http-client.service.ts",
   "PreviewInSolutionExplorer": false
 }

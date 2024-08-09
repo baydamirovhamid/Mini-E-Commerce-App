@@ -15,7 +15,7 @@ export class ProductService {
 
   create(product: Create_Product, successCallBack?: () => void, errorCallBack?: (errorMessage:string) => void) {
     this.httpClientService.post({
-      controller: "Product"
+      controller: "Products"
 
     }, product).subscribe(result => {
       successCallBack();

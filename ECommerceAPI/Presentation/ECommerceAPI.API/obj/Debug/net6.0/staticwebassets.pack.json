@@ -1,0 +1,37 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\99470\\Desktop\\Mini E-Commerce App\\ECommerceAPI\\Presentation\\ECommerceAPI.API\\wwwroot\\resource\\invoices\\Copy-of-DSCF2851.JPG",
+      "PackagePath": "staticwebassets\\resource\\invoices\\Copy-of-DSCF2851.JPG"
+    },
+    {
+      "Id": "C:\\Users\\99470\\Desktop\\Mini E-Commerce App\\ECommerceAPI\\Presentation\\ECommerceAPI.API\\wwwroot\\resource\\invoices\\Copy-of-DSCF3095.JPG",
+      "PackagePath": "staticwebassets\\resource\\invoices\\Copy-of-DSCF3095.JPG"
+    },
+    {
+      "Id": "C:\\Users\\99470\\Desktop\\Mini E-Commerce App\\ECommerceAPI\\Presentation\\ECommerceAPI.API\\wwwroot\\resource\\product-images\\delete.png",
+      "PackagePath": "staticwebassets\\resource\\product-images\\delete.png"
+    },
+    {
+      "Id": "C:\\Users\\99470\\Desktop\\Mini E-Commerce App\\ECommerceAPI\\Presentation\\ECommerceAPI.API\\wwwroot\\resource\\product-images\\edit.png",
+      "PackagePath": "staticwebassets\\resource\\product-images\\edit.png"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.ECommerceAPI.API.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.ECommerceAPI.API.props",
+      "PackagePath": "build\\ECommerceAPI.API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.ECommerceAPI.API.props",
+      "PackagePath": "buildMultiTargeting\\ECommerceAPI.API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.ECommerceAPI.API.props",
+      "PackagePath": "buildTransitive\\ECommerceAPI.API.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

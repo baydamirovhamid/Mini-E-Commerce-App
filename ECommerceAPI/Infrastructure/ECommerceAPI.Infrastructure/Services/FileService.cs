@@ -103,7 +103,6 @@ namespace ECommerceAPI.Infrastructure.Services
             string uploadPath = Path.Combine(_webHostEnvironment.WebRootPath, path);
 
             if (!Directory.Exists(uploadPath))
-            {
                 Directory.CreateDirectory(uploadPath);
 
                 List<(string fileName, string path)> datas = new();
@@ -113,15 +112,14 @@ namespace ECommerceAPI.Infrastructure.Services
                     string fileNewName = await FileRenameAsync(uploadPath, file.FileName);
 
                     bool result = await CopyFileAsync($"{uploadPath}\\{fileNewName}", file);
-                    datas.Add((fileNewName, $"{uploadPath}\\{fileNewName}"));
+                    datas.Add((fileNewName, $"{path}\\{fileNewName}"));
                     results.Add(result);
                 }
 
                 if (results.TrueForAll(r => r.Equals(true)))
-
                     return datas;
             
-            }        return null;
+                  return null;
         }
     }
 }

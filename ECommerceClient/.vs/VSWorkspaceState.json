@@ -8,6 +8,6 @@
     "\\src\\app\\services\\common\\file-upload",
     "\\src\\app\\services\\common\\models"
   ],
-  "SelectedNode": "\\src\\app\\services\\common\\http-client.service.ts",
+  "SelectedNode": "\\src\\app\\services\\common\\file-upload\\file-upload.component.ts",
   "PreviewInSolutionExplorer": false
 }
